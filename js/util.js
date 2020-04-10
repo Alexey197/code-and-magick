@@ -16,8 +16,14 @@
     }
   };
 
+  var getRandomArrElement = function (arr) {
+    var arrElement = Math.floor(Math.random() * arr.length);
+    return arr[arrElement];
+  };
+
   window.util = {
     isEscEvent: isEscEvent,
-    isEnterEvent: isEnterEvent
+    isEnterEvent: isEnterEvent,
+    getRandomArrElement: getRandomArrElement
   };
 })();
